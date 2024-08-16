@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEGO Interface</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #250186;
+            font-family: "Press Start 2P", system-ui;
+            font-size: 8px;
+        }
+        .desktop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 50px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .icon {
+            text-align: center;
+            color: white;
+        }
+        .icon img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .icon p {
+            margin: 5px 0;
+        }
+
+        .icon:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+
+
+        .logo {
+            position: absolute;
+            right: 50px;
+            bottom: 100px;
+            text-align: center;
+            color: #F0E68C;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+        .taskbar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #c0c0c0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .taskbar-left, .taskbar-right {
+            display: flex;
+            align-items: center;
+        }
+        .taskbar img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+        }
+        .taskbar .menu-item {
+            margin: 0 10px;
+            color: black;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            background-color: #c0c0c0;
+            border: 2px solid #fff;
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+            padding: 2px 10px;
+            cursor: pointer;
+            box-shadow: inset 0px 0px 2px #000;
+            margin: 5px;
+        }
+        .menu img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <div class="icon">
+            <img src="../resources/icons/monitor_touch.png" alt="Referral">
+            <p>My Computer</p>
+        </div>
+        <div class="icon">
+            <img src="../resources/icons/folder.png" alt="Document">
+            <p>Online Services</p>
+        </div>
+        
+        <div class="icon">
+            <img src="../resources/icons/network.png" alt="Stake">
+            <p>Network</p>
+            <p>Neighborhood</p>
+        </div>
+        <div class="icon">
+            <img src="../resources/icons/internet.png" alt="Email">
+            <p>Internet</p>
+            <p>Explorer</p>
+        </div>
+        <div class="icon">
+            <img src="../resources/icons/inbox.png" alt="Donation">
+            <p>Inbox</p>
+        </div>
+        <div class="icon">
+            <img src="../resources/icons/outlook.png" alt="Hunter">
+            <p>Outlook</p>
+            <p>Express</p>
+        </div>
+        <div class="icon">
+            <img src="../resources/icons/recycle.png" alt="Log">
+            <p>Recycle Bin</p>
+        </div>
+        <div class="icon">
+            <img src="../resources/icons/document.png" alt="Binance">
+            <p>My Documents</p>
+        </div>
+        <div class="icon">
+            <img src="../resources/icons/briefcase.png" alt="Dividends">
+            <p>My briefcase</p>
+        </div>
+        
+        
+    </div>
+    <div class="logo">
+        <img src="../resources/icons/logo.png" alt="Lego Character">
+        <p>Windows 100 years ago</p>
+    </div>
+    <div class="taskbar">
+        <div class="taskbar-left">
+            <div class="menu">
+                <img src="../resources/icons/logo.png" alt="Menu">
+                <span>Menu</span>
+            </div>
+            <img src="../resources/icons/network.png">
+            <img src="../resources/icons/internet.png">
+            <img src="../resources/icons/folder.png">
+        </div>
+        <div class="taskbar-right">
+            <span class="menu-item">English</span>
+            <a href="https://discord.com"><img src="../resources/icons/discord.png" alt="Discord"></a>
+            <a href="https://web.telegram.org/"><img src="../resources/icons/telegram.png" alt="Telegram"></a>
+            <a href="https://twitter.com/home"><img src="../resources/icons/twitter.png" alt="Twitter"></a>
+            <a href="https://github.com/"><img src="../resources/icons/github.png" alt="GitHub"></a>
+            
+        </div>
+    </div>
+</body>
+</html>
